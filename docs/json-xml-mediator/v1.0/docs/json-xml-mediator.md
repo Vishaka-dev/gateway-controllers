@@ -30,7 +30,7 @@ These parameters are configured per-API/route by the API developer:
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `upstreamPayloadFormat` | string | Yes | Defines the payload format expected by the upstream service. Requests are converted to this format before reaching upstream, and responses are interpreted as arriving in this format before any downstream conversion is applied. Valid values: `"xml"`, `"json"`. |
-| `downstreamPayloadFormat` | string | Yes | Defines the payload format expected by downstream clients. Requests are converted from this format before reaching upstream, and responses are converted back to this format before returning to the client. Valid values: `"xml"`, `"json"`. This value must differ from `upstreamPayloadFormat`. |
+| `downstreamPayloadFormat` | string | Yes (or the deprecated `downsteamPayloadFormat`) | Defines the payload format expected by downstream clients. Requests are converted from this format before reaching upstream, and responses are converted back to this format before returning to the client. Valid values: `"xml"`, `"json"`. This value must differ from `upstreamPayloadFormat`. |
 
 **Note:**
 
